@@ -1,0 +1,584 @@
+ //***Parámetros del Observador***************************************************** MARISOL
+	const double Kdm[n] = {115,145,185}, Kds[n] = {115,164,155}, Azm[n] = {1,1,1},  Azs[n] = {1,1,1};
+    
+	//***Parámetros del control Ts y Tm************************************************
+	const double Kam[n] = {0.0026,0.000001,0.0000001}, Kpm[n] = {0.0405,0.0207,0.0204}, Axm[n] = {23.444,48.111,46.111};
+	const double KBs[n] = {0.0000000001,0.000000000000021,0.00000000000041}, KBm[n] = {0.0000000001,0.000000000000081,0.00000000000081},  Kys[n] = {0.0000021,0.0000000011,0.0000000011}, Kym[n] = {0.0000021,0.0000000011,0.0000000011};
+	const double Kps[n] = {0.0302,0.0408,0.0302},  Axs[n] = {54.111,71.111,76.111};
+
+
+
+//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {250,240,225}, LambdaZ[n] = {8,5,5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ****************************
+	const double Kbeta[n] = {0.000001,0.0000021,0.0000041}, Kgama[n] = {0.000001,0.0005,0.0005};
+	const double Kp[n] = {0.0509,0.0605,0.0505}, LambdaQ[n] = {85,75,70};//LambdaQ[n] = {50,45,50};
+
+  //*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {250,240,225}, LambdaZ[n] = {8,5,5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ****************************
+	const double Kbeta[n] = {0.0000001,0.00000021,0.00000041}, Kgama[n] = {0,0,0};
+	const double Kp[n] = {0.06,0.06,0.06}, LambdaQ[n] = {15,15,10};//LambdaQ[n] = {50,45,50};
+
+//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {250,240,225}, LambdaZ[n] = {8,5,5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ****************************
+	const double Kbeta[n] = {0, 0, 0}, Kgama[n] = {0, 0, 0};
+	const double Kp[n] = {0.0609,0.061,0.061}, LambdaQ[n] = {25,25,20};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+   //*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {250,240,225}, LambdaZ[n] = {8,5,5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ****************************
+	const double Kbeta[n] = {0, 0, 0}, Kgama[n] = {0, 0, 0};
+	const double Kp[n] = {0.0603,0.0609,0.0609}, LambdaQ[n] = {30,30,25};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+    //*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {250,240,225}, LambdaZ[n] = {8,6,6};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ****************************
+	const double Kbeta[n] = {0, 0, 0}, Kgama[n] = {0, 0, 0};
+	const double Kp[n] = {0.0603,0.0609,0.0609}, LambdaQ[n] = {30,30,25};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {250,240,225}, LambdaZ[n] = {0.5,0.5,0.5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador **************************** EMPIEZA A VIBRAR
+	const double Kbeta[n] = {0, 0, 0}, Kgama[n] = {0, 0, 0};
+	const double Kp[n] = {0.0603,0.0609,0.0609}, LambdaQ[n] = {35,35,30};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+ //*************Parámetros del Observador***************************************************** ERRORES DE POSICION EN 4
+	const double Kd[n] = {250,240,225}, LambdaZ[n] = {0.5,0.5,0.5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ****************************
+	const double Kbeta[n] = {0, 0, 0}, Kgama[n] = {0, 0, 0};
+	const double Kp[n] = {0.0505,0.0509,0.0509}, LambdaQ[n] = {35,35,30};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+    //*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {250,240,225}, LambdaZ[n] = {2,2,2};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ****************************
+	const double Kbeta[n] = {0, 0, 0}, Kgama[n] = {0, 0, 0};
+	const double Kp[n] = {0.0555,0.059,0.0515}, LambdaQ[n] = {70.5,80.5,70.5};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+
+const double Kd[n] = {150,140,125}, LambdaZ[n] = {4,5,5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ****************************
+	const double Kbeta[n] = {0, 0, 0}, Kgama[n] = {0, 0, 0};
+	const double Kp[n] = {0.0555,0.059,0.0515}, LambdaQ[n] = {70.5,80.5,70.5};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+ //*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {150,140,125}, LambdaZ[n] = {10,5,5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ****************************
+	const double Kbeta[n] = {0, 0, 0}, Kgama[n] = {0.1, 0.1, 0.1};
+	const double Kp[n] = {0.0555,0.059,0.0515}, LambdaQ[n] = {70.5,80.5,70.5};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+MAS O MENOS ERROR DE Q2 1.5 Y DE Q1 Y Q3 1 GRADO
+	//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {190,180,165}, LambdaZ[n] = {10,5,5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ****************************
+	const double Kbeta[n] = {0.00000001, 0.000000051, 0.000000051}, Kgama[n] = {0.00002, 0.00000002, 0.00000002};
+	const double Kp[n] = {0.0505,0.06,0.055}, LambdaQ[n] = {80.5,80.5,80.5};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+CON FRECUENCIAS
+	const double omegaQ1 = (2*pi)/5, omegaQ2 = (2*pi)/10, omegaQ3 = (2*pi)/15;
+
+
+
+
+********* CAMBIO DE FRECUENCIA ********
+
+	const double omegaQ1 = (2*pi)/10, omegaQ2 = (2*pi)/15, omegaQ3 = (2*pi)/20;
+
+
+
+	//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {175,175,205}, LambdaZ[n] = {3,2,1.5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ****************************
+	const double Kbeta[n] = {0.0000000001,0.000000000000021,0.00000000000041}, Kgama[n] = {0.31,0.11,0.11};
+	const double Kp[n] = {0.0455,0.0505,0.0454}, LambdaQ[n] = {41.444,46.511,47.111};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+	//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {195,195,205}, LambdaZ[n] = {5,4,4};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ****************************
+	const double Kbeta[n] = {0.1,0.21,0.41}, Kgama[n] = {0.1,0.11,0.11};
+	const double Kp[n] = {0.0455,0.0405,0.0454}, LambdaQ[n] = {71.444,86.511,67.111};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {215,215,215}, LambdaZ[n] = {3.5,2.5,2.5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ****************************
+	const double Kbeta[n] = {0.004,0.0041,0.0041}, Kgama[n] = {0.1,0.11,0.11};
+	const double Kp[n] = {0.0455,0.0405,0.0454}, LambdaQ[n] = {71.444,86.511,67.111};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {215,215,215}, LambdaZ[n] = {3.5,2.5,2.5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ****************************
+	const double Kbeta[n] = {0.0001,0.00041,0.00041}, Kgama[n] = {0.0001,0.00011,0.00011};
+	const double Kp[n] = {0.0455,0.0405,0.0454}, LambdaQ[n] = {71.444,76.511,67.111};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {215,215,215}, LambdaZ[n] = {3.5,2.5,2.5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ****************************
+	const double Kbeta[n] = {0.0001,0.00041,0.00041}, Kgama[n] = {0.001,0.0011,0.0011};
+	const double Kp[n] = {0.0455,0.0405,0.0454}, LambdaQ[n] = {71.444,86.511,67.111};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+	//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {130,130,120}, LambdaZ[n] = {0.55,0.55,0.55};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {0.00001,0.00001,0.00001}, Kgama[n] = {0.15,0.15,0.15};
+	const double Kp[n] = {0.069,0.07,0.069}, LambdaQ[n] = {15, 20, 15};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+
+	//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {280,220,200}, LambdaZ[n] = {0.5,0.5,0.5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {0.00001,0.00001,0.00001}, Kgama[n] = {0.5,0.5,0.5};
+	const double Kp[n] = {0.06,0.07,0.06}, LambdaQ[n] = {15, 20, 15};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+ERRORES EN 8 GRADOS PERO NO PRESENTA OSICILACIONES
+
+	//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {128,142,100}, LambdaZ[n] = {0.5,0.5,0.5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {0.00001,0.00001,0.00001}, Kgama[n] = {0.002,0.002,0.002};
+	const double Kp[n] = {0.1,0.15,0.1}, LambdaQ[n] = {5, 5, 5};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+ERRORES EN 4 GRADOS PERO  PRESENTA  POCAS OSCILACIONES
+
+	//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {128,142,100}, LambdaZ[n] = {5,5,5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {0.00001,0.00001,0.00001}, Kgama[n] = {0.002,0.002,0.002};
+	const double Kp[n] = {0.1,0.15,0.1}, LambdaQ[n] = {15, 15, 10};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+
+ERROR DE POSICION EN 4 GRADOS CON BASTANTE OSCILACION EN Q1
+//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {128,142,100}, LambdaZ[n] = {5,5,5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {0.00001,0.00001,0.00001}, Kgama[n] = {0.002,0.002,0.002};
+	const double Kp[n] = {0.1,0.15,0.1}, LambdaQ[n] = {10, 10, 5};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+ERRORES DE POSICION EN 4 GRADOS CON POCAS OSCILASIONES Y ERROR DE OBSERVACION MUY PEQUEÑO
+
+
+//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {128,142,100}, LambdaZ[n] = {5,5,5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {0.00001,0.00001,0.00001}, Kgama[n] = {0.002,0.002,0.002};
+	const double Kp[n] = {0.1,0.15,0.1}, LambdaQ[n] = {10, 10, 8};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {128,142,100}, LambdaZ[n] = {5,5,5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {0.00001,0.00001,0.00001}, Kgama[n] = {0.15,0.15,0.15};
+	const double Kp[n] = {0.1,0.15,0.1}, LambdaQ[n] = {10, 10, 8};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+ERRORES DE 2 GRADOS PERO CON BASTANTE OSCILACION
+
+	//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {128,142,100}, LambdaZ[n] = {0.5,0.5,0.5};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {0.00001,0.00001,0.00001}, Kgama[n] = {0,0,0};
+	const double Kp[n] = {0.07,0.08,0.06}, LambdaQ[n] = {56, 54, 57};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {128,142,100}, LambdaZ[n] = {4,4,4};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {0.00001,0.00001,0.00001}, Kgama[n] = {0.001,0.001,0.001};
+	const double Kp[n] = {0.1,0.15,0.1}, LambdaQ[n] = {20, 20, 10};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {128,142,100}, LambdaZ[n] = {4,4,4};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {0.00001,0.00001,0.00001}, Kgama[n] = {0.003,0.003,0.003};
+	const double Kp[n] = {0.1,0.15,0.1}, LambdaQ[n] = {20, 20, 10};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+ERRORES DE 3 GRADOS PERO CON OSCILACIONES
+	//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {178,142,120}, LambdaZ[n] = {1.5, 1.2, 1.4};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {0.0000001,0.0000001,0.0000001}, Kgama[n] = {0.002,0.002,0.002};
+	const double Kp[n] = {0.09,0.1,0.09}, LambdaQ[n] = {15,20,10};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4
+
+ERROR DE 1.5 GRADOS PARA Q1 Y DE 2.5 PARA Q2 Y Q3 PERO TIENE MUCHAS OSCILACIONES
+	//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {178,142,140}, LambdaZ[n] = {1.5, 1.2, 1.4};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {0.0000001,0.0000001,0.0000001}, Kgama[n] = {0.02,0.02,0.02};
+	const double Kp[n] = {0.15,0.2,0.1}, LambdaQ[n] = {15,15,20};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+eRROES GRANDES PERO SIN OSCILACIONES
+
+//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {178,142,140}, LambdaZ[n] = {1.5, 1.2, 1.4};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {0.0000001,0.0000001,0.0000001}, Kgama[n] = {5,5,5};
+	const double Kp[n] = {0.15,0.2,0.1}, LambdaQ[n] = {5,5,5};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+ERRORES EN UN GRADO PERO CON MUCHAS OSCILACIONES
+//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {178,142,140}, LambdaZ[n] = {1.5, 1.2, 1.4};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {1,1,1}, Kgama[n] = {100,100,100};
+	const double Kp[n] = {0.1,0.15,0.09}, LambdaQ[n] = {42,52,75};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {178,142,140}, LambdaZ[n] = {1.5, 1.2, 1.4};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {0.0001,0.0001,0.0001}, Kgama[n] = {0.1,0.1,0.1};
+	const double Kp[n] = {0.1,0.15,0.1}, LambdaQ[n] = {92,82,95};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+
+
+	//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {120,125,130}, LambdaZ[n] = {0.5,0.5,1};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {0, 0, 0}, Kgama[n] = {0.5,0.01,0.009};
+	const double Kp[n] = {0.2,0.2,0.1}, LambdaQ[n] = {5, 5, 5};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+	
+ERRORES DE 4 GRADOS SIN OSCILACIONES EN ROBOT 754
+	//*************Parámetros del Observador*****************************************************
+	const double Kd[n] = {120,125,130}, LambdaZ[n] = {0.5,0.5,1};//LambdaZ[n] = {10,7,6};
+    
+	//************Parámetros del control - observador ***************************
+	const double Kbeta[n] = {0, 0, 0}, Kgama[n] = {0.5,0.01,0.009};
+	const double Kp[n] = {0.2,0.2,0.1}, LambdaQ[n] = {5,10, 5};//LambdaQ[n] = {50,45,50};
+	const double ks = 0.4;
+
+ERRORES EN 3, 4 Y 6 GRADOS CON OSCILACIONES EN Q3 
+
+	//*************   Parámetros del Observador    ******************************
+	const double Kd[n] = {120,125,120}, LambdaZ[n] = {0.5,0.5,0.5};//LambdaZ[n] = {10,7,6};
+    
+	//**********      Parámetros del control - observador ***********************
+	const double Kbeta[n] = {0, 0, 0}, Kgama[n] = {1,1,1};
+	const double Kp[n] = {0.205,0.205,0.092}, LambdaQ[n] = {5,6.5,4.5};//LambdaQ[n] = {5,8,5};
+	const double ks = 0.4;
+
+//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {120,125,120}, LambdaZ[n] = {0.5,0.5,0.5};//LambdaZ[n] = {10,7,6};
+    
+	//************  Parámetros del control - observador *************************
+	const static double Kbeta[n] = {0, 0, 0}, Kgama[n] = {10,20,1};
+	const static double Kp[n] = {0.15,0.18,0.095}, LambdaQ[n] = {7,7,10};//LambdaQ[n] = {5,8,5};
+	const static double ks = 0.4;
+
+
+
+	//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {130,125,120}, LambdaZ[n] = {0.5,0.5,0.5};//LambdaZ[n] = {10,7,6};
+    
+	//************  Parámetros del control - observador *************************
+	const static double Kbeta[n] = {0, 0, 0}, Kgama[n] = {0.01,15,15};
+	const static double Kp[n] = {0.2,0.2,0.095}, LambdaQ[n] = {7,9,8};//LambdaQ[n] = {5,8,5};
+	const static double ks = 0.4;
+
+//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {130,125,120}, LambdaZ[n] = {0.5,0.5,0.5};//LambdaZ[n] = {10,7,6};
+    
+	//************  Parámetros del control - observador *************************
+	const static double Kbeta[n] = {0, 0, 0}, Kgama[n] = {0.15,0.15,0.15};
+	const static double Kp[n] = {0.085,0.105,0.085}, LambdaQ[n] = {10,15,15};//LambdaQ[n] = {5,8,5};
+	const static double ks = 0.4;
+
+
+NOTA: Q3 PUEDE SER 0.1 SI ES MAS COMIENZA A VIBRAR
+
+
+	//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {130,125,120}, LambdaZ[n] = {1,1,1};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0, 0, 0}, Kgama[n] = {10,10,15};
+	const double Kp[n] = {0.18,0.19,0.1}, LambdaQ[n] = {3,4,2};
+	const double ks = 0.4;
+
+
+ERRORES DE 8 GRADOS CON POCAS OSCILACIONES EN Q3
+	//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {130,125,120}, LambdaZ[n] = {1,1,1};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0, 0, 0}, Kgama[n] = {10,10,15};
+	const double Kp[n] = {0.18,0.19,0.1}, LambdaQ[n] = {3,4,2};
+	const double ks = 0.4;
+
+//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {130,125,120}, LambdaZ[n] = {1,1,1};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0, 0, 0}, Kgama[n] = {1,1,1};
+	const double Kp[n] = {0.1,0.1,0.1}, LambdaQ[n] = {3,4,2};
+	const double ks = 0.4;
+
+
+	//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {130,125,120}, LambdaZ[n] = {1,1,1};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000001, 0.000001, 0.000001}, Kgama[n] = {0.5,0.5,0.5};
+	const double Kp[n] = {0.065,0.065,0.065}, LambdaQ[n] = {10,10,5};
+	const double ks = 0.4;
+
+
+VIBRA MUCHO
+//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {130,125,120}, LambdaZ[n] = {1.5,1.5,1};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000001, 0.000001, 0.000001}, Kgama[n] = {2,4,2};
+	const double Kp[n] = {0.09,0.09,0.09}, LambdaQ[n] = {10,10,10};
+
+
+eRRORES EN 2 GRADOS SIN TANTAS OSCILACIONES
+//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {130,125,120}, LambdaZ[n] = {1.5,1.5,1};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000001, 0.000001, 0.000001}, Kgama[n] = {0.1, 0.12, 0.08};
+	const double Kp[n] = {0.12,0.15,0.1}, LambdaQ[n] = {15,10,10};
+	const double ks = 0.4;
+
+
+
+//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {130,125,120}, LambdaZ[n] = {1.5,1.5,1};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000001, 0.000001, 0.000001}, Kgama[n] = {0.15, 0.4, 0.15};
+	const double Kp[n] = {0.15,0.18,0.1}, LambdaQ[n] = {15,15,12.5};
+	const double ks = 0.4;
+
+
+ERRORES DE 2 GRADOS PERO CON OSCILACIONES
+
+	//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {130,125,120}, LambdaZ[n] = {1.5,1.5,1};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000001, 0.000001, 0.000001}, Kgama[n] = {0.25, 0.4, 0.4};
+	const double Kp[n] = {0.15,0.18,0.1}, LambdaQ[n] = {15,15,12.5};
+	const double ks = 0.4;
+
+ERRORES DE Q1 EN 1.5 SIN TANTA OSCILACION PERO Q2 Y Q3 PRESENTAN ERRORES DE 3 GRADOS CON MUCHAS OSCILACIONES
+
+//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {130,125,120}, LambdaZ[n] = {1.5,1.5,1};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000001, 0.000001, 0.000001}, Kgama[n] = {0.4, 0.6, 0.6};
+	const double Kp[n] = {0.14,0.17,0.09}, LambdaQ[n] = {15,15,12.5};
+	const double ks = 0.4;
+
+
+	//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {130,125,120}, LambdaZ[n] = {1.5,1.5,1};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000001, 0.000001, 0.000001}, Kgama[n] = {0.6, 0.8, 0.8};
+	const double Kp[n] = {0.12,0.15,0.09}, LambdaQ[n] = {15,15,5};
+	const double ks = 0.4;
+
+	//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {130,125,120}, LambdaZ[n] = {1.5,1.5,1};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000001, 0.000001, 0.000001}, Kgama[n] = {1, 1.5, 1.5};
+	const double Kp[n] = {0.12,0.15,0.09}, LambdaQ[n] = {10,10,5};
+	const double ks = 0.4;
+
+
+	//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {120,115,120}, LambdaZ[n] = {0.5,0.5,0.5};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000001, 0.000001, 0.000001}, Kgama[n] = {0.5, 1, 0.5};
+	const double Kp[n] = {0.065,0.095,0.065}, LambdaQ[n] = {15,20,10};
+	const double ks = 0.4;
+
+
+ERRORES DE 3 GRADOS PERO CON MUCHAS OSCILACIONES
+//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {150,145,140}, LambdaZ[n] = {3,2,1};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000001, 0.000001, 0.000001}, Kgama[n] = {1, 0.8, 0.35};
+	const double Kp[n] = {0.085,0.1,0.065}, LambdaQ[n] = {15,20,20};
+	const double ks = 0.4;
+
+
+//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {130,135,130}, LambdaZ[n] = {2,2,1.5};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.00000001, 0.00000001, 0.00000001}, Kgama[n] = {0.02, 0.03, 0.02};
+	const double Kp[n] = {0.075,0.075,0.075}, LambdaQ[n] = {15,20,15};
+	const double ks = 0.4;
+
+
+
+	//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {130,135,130}, LambdaZ[n] = {1,2,1};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.00000001, 0.00000001, 0.00000001}, Kgama[n] = {1, 1, 1};
+	const double Kp[n] = {0.08,0.095,0.075}, LambdaQ[n] = {10,10,12.5};
+	const double ks = 0.4;
+
+
+
+//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {130,135,130}, LambdaZ[n] = {2,2,1};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.00000001, 0.00000001, 0.00000001}, Kgama[n] = {0.05,0.1,0.05};
+	const double Kp[n] = {0.09,0.105,0.095}, LambdaQ[n] = {12.5,12.5,13};
+	const double ks = 0.4;
+
+
+
+//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {150,145,140}, LambdaZ[n] = {3,2,1};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000001, 0.000001, 0.000001}, Kgama[n] = {3, 5, 3};
+	const double Kp[n]
+
+
+
+ERRORES DE 0.5 GRADOS PERO CON MUCHAS OSCILACIONES
+//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {150,145,140}, LambdaZ[n] = {3,2,1};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000001, 0.000001, 0.000001}, Kgama[n] = {3, 5, 3};
+	const double Kp[n] = {0.085,0.085,0.065}, LambdaQ[n] = {15,25,25};
+	const double ks = 0.4;
+
+
+ERRORES DE 1 GRADO Q1 Y Q3 2 GRADOS PARA Q2
+//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {150,145,140}, LambdaZ[n] = {3,3,3};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000000001, 0.000000001, 0.000000001}, Kgama[n] = {0.2, 0.2, 0.1};
+	const double Kp[n] = {0.085,0.085,0.085}, LambdaQ[n] = {60,65,65};
+	const double ks = 0.4;
+
+
+
+	//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {150,145,140}, LambdaZ[n] = {3,3,3};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000000001, 0.000000001, 0.000000001}, Kgama[n] = {0.1, 0.1, 0.1};
+	const double Kp[n] = {0.085,0.085,0.085}, LambdaQ[n] = {60,65,65};
+	const double ks = 0.4;
+
+
+TRAYECTORIA CONSTANTE 
+
+	//Posición deseada final del M/S
+	
+	const double qmdf[n]={pi/4, pi/4, -110.0*pi/180.0};
+	
+	//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {150,145,140}, LambdaZ[n] = {3,3,3};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000000001, 0.000000001, 0.000000001}, Kgama[n] = {0.125, 0.11, 0.11};
+	const double Kp[n] = {0.055,0.055,0.055}, LambdaQ[n] = {8,10,10};
+	
+
+
+PRUEBA 2
+
+	//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {150,145,140}, LambdaZ[n] = {5,5,4};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000000001, 0.000000001, 0.000000001}, Kgama[n] = {0.4, 0.4, 0.3};
+	const double Kp[n] = {0.075,0.085,0.065}, LambdaQ[n] = {50,60,40};
+	const double ks = 0.4;
+
+
+PRUEBA 3
+
+//************* Parámetros del Observador   *********************************
+	const double Kd[n] = {150,145,140}, LambdaZ[n] = {5,5,4};
+    
+	//************  Parámetros del control - observador *************************
+	const double Kbeta[n] = {0.000000001, 0.000000001, 0.000000001}, Kgama[n] = {0.6, 0.6, 0.5};
+	const double Kp[n] = {0.075,0.085,0.065}, LambdaQ[n] = {30,30,35};
+	const double ks = 0.4;
