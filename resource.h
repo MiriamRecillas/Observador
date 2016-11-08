@@ -21,11 +21,8 @@
 #define IDC_HOME                        1012
 #define IDC_UNICON                      1013
 #define IDC_Bilateral                   1014
-#define IDC_Bilateral3                  1015
 #define IDC_Control_Observer            1015
 #define IDC_Tem                         1016
-#define IDC_Bilateral2                  1017
-#define IDC_Control_Observer2           1017
 #define IDC_LIST1                       1018
 
 // Next default values for new objects

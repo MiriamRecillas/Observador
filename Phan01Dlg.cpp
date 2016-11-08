@@ -131,7 +131,6 @@ BEGIN_MESSAGE_MAP(CPhan01Dlg, CDialog)
 	ON_BN_CLICKED(IDC_UNICON, &CPhan01Dlg::OnBnClickedUnicon)
 	ON_BN_CLICKED(IDC_Control_Observer, &CPhan01Dlg::OnBnClickedControlObserver)
 	
-	ON_BN_CLICKED(IDC_Control_Observer2, &CPhan01Dlg::OnBnClickedControlObserver2)
 END_MESSAGE_MAP()
 //=====================================================================================
 // Controladores de mensaje de CPhan01Dlg
@@ -379,7 +378,7 @@ void CPhan01Dlg::OnBnClickedDetener()
 		hdDisableDevice(Master);
 	}
 	FILE *outFile;
-	if(fopen_s(&outFile, "prueba3.m","w")!=0){
+	if(fopen_s(&outFile, "prueba4.m","w")!=0){
 		MessageBox(_T("No se pudo crear el archivo para graficar"));
 	}
 	else{
@@ -687,14 +686,14 @@ void CALLBACK CPhan01Dlg::CCB(UINT uID, UINT uMsg, DWORD dwUser, DWORD dw1, DWOR
 	//Posición deseada final del M/S
 	const double qmdf[n]={pi/4, pi/4, -110.0*pi/180.0};
 
+		
 	//************* Parámetros del Observador   *********************************
-	const double Kd[n] = {150,145,140}, LambdaZ[n] = {5,5,4};
+	const double Kd[n] = {150,145,140}, LambdaZ[n] = {3,2,1};
     
 	//************  Parámetros del control - observador *************************
-	const double Kbeta[n] = {0.000000001, 0.000000001, 0.000000001}, Kgama[n] = {0.5, 0.5, 0.4};
-	const double Kp[n] = {0.075,0.085,0.065}, LambdaQ[n] = {40,40,45};
+	const double Kbeta[n] = {0.000001, 0.000001, 0.000001}, Kgama[n] = {3, 5, 3};
+	const double Kp[n] = {0.085,0.085,0.065}, LambdaQ[n] = {15,25,25};
 	const double ks = 0.4;
-
 
 	//************ Frecuencias ****************************
 
@@ -885,5 +884,3 @@ void CALLBACK CPhan01Dlg::CCB(UINT uID, UINT uMsg, DWORD dwUser, DWORD dw1, DWOR
 		iCObs = false;
 	return;
 }
-
-
