@@ -130,8 +130,6 @@ BEGIN_MESSAGE_MAP(CPhan01Dlg, CDialog)
 	ON_BN_CLICKED(IDC_HOME, &CPhan01Dlg::OnBnClickedHome)
 	ON_BN_CLICKED(IDC_UNICON, &CPhan01Dlg::OnBnClickedUnicon)
 	ON_BN_CLICKED(IDC_Control_Observer, &CPhan01Dlg::OnBnClickedControlObserver)
-	
-	ON_BN_CLICKED(IDC_Control_Observer2, &CPhan01Dlg::OnBnClickedControlObserver2)
 END_MESSAGE_MAP()
 //=====================================================================================
 // Controladores de mensaje de CPhan01Dlg

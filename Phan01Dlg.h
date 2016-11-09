@@ -49,5 +49,4 @@ public:
 	CEdit Tiempo;
 	afx_msg void OnBnClickedControlObserver();
 	static void CALLBACK CCB(UINT uID, UINT uMsg, DWORD dwUser, DWORD dw1, DWORD dw2);
-	afx_msg void OnBnClickedControlObserver2();
 };
