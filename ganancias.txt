@@ -571,14 +571,3 @@ PRUEBA 2
 	const double Kbeta[n] = {0.000000001, 0.000000001, 0.000000001}, Kgama[n] = {0.4, 0.4, 0.3};
 	const double Kp[n] = {0.075,0.085,0.065}, LambdaQ[n] = {50,60,40};
 	const double ks = 0.4;
-
-
-PRUEBA 3
-
-//************* Parámetros del Observador   *********************************
-	const double Kd[n] = {150,145,140}, LambdaZ[n] = {5,5,4};
-    
-	//************  Parámetros del control - observador *************************
-	const double Kbeta[n] = {0.000000001, 0.000000001, 0.000000001}, Kgama[n] = {0.6, 0.6, 0.5};
-	const double Kp[n] = {0.075,0.085,0.065}, LambdaQ[n] = {30,30,35};
-	const double ks = 0.4;
